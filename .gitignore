@@ -15,3 +15,4 @@ htmlcov/
 # Editor state
 .idea/
 .vscode/
+docs/*
