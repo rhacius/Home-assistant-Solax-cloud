@@ -112,6 +112,14 @@ SENSOR_TYPES = [
         translation_key="pocket_serial",
     ),
     SensorEntityDescription(
+        key="batPower",
+        name="Battery power",
+        translation_key="battery_power",
+        device_class=SensorDeviceClass.POWER,
+        native_unit_of_measurement=UnitOfPower.WATT,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    SensorEntityDescription(
         key="ratedPower",
         name="Inverter size",
         translation_key="inverter_size",
